@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+
+.main-menu {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.menu-item {
+  text-decoration: none;
+  color: white;
+  transition: all 0.2s linear;
+}
+
+.menu-item:hover {
+  color: aqua;
+  transform: scale(1.2);
+}
