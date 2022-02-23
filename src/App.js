@@ -32,7 +32,18 @@ function App() {
           </header>
         </>
       )}
-      {url.pathname !== "/" && <Link to="/">Home</Link>}
+      {url.pathname !== "/" && (
+        <Link to="/">
+          <div>
+            <img
+              src={logo}
+              className="App-logo"
+              alt="logo"
+              style={{ height: "40px" }}
+            />
+          </div>
+        </Link>
+      )}
 
       <Routes>
         <Route path="/mary" element={<Maria />} />
